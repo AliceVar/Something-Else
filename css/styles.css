@@ -22,7 +22,7 @@ body {
         background:
             linear-gradient(rgba(0, 0, 0, 0.45),
                 rgba(0, 0, 0, 0.75)),
-            url("images/dips.jpg");
+            url("../images/dips.jpg");
     
         background-size: cover;
         background-position: center;
@@ -452,7 +452,7 @@ body {
     background:
             linear-gradient(rgba(0, 0, 0, 0.45),
                 rgba(0, 0, 0, 0.75)),
-            url("images/olives.jpg");
+            url("../images/olives.jpg");
     
         background-size: cover;
         background-position: center;
