@@ -472,6 +472,12 @@ body {
     gap: 18px;
 }
 
+.reservation-row {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+}
+
 .reservation-form input,
 .reservation-form textarea {
     width: 100%;
@@ -738,6 +744,22 @@ body {
     .reservation-form {
         padding: 25px;
     }
+    @media (max-width: 768px) {
+    .reservation-row {
+        grid-template-columns: 1fr;
+    }
+
+    .reservation-form {
+        width: 100%;
+        max-width: 420px;
+        padding: 25px;
+    }
+
+    .reservation-form input,
+    .reservation-form textarea {
+        max-width: 100%;
+    }
+}
 
     .reservation-form input,
     .reservation-form textarea {
