@@ -29,7 +29,7 @@ body {
     background:
     linear-gradient(rgba(15, 15, 15, .45),
             rgba(15, 15, 15, .8)),
-    url("../images/steak.jpg");
+    url("../images/steak-back.png");
     background-size: cover;
     background-position: center;
 }
@@ -136,7 +136,7 @@ body {
 }
 
 .small-title {
-    color: var(--bronze);
+    color: var(--sand);
     font-size: 18px;
     margin-bottom: 15px;
     letter-spacing: 2px;
@@ -301,12 +301,35 @@ body {
     margin-bottom: 18px;
 }
 
+.happy-hour-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    gap: 60px;
+    max-width: 1200px;
+    margin: 80px auto;
+}
+
+.happy-hour-image {
+    width: 350px;
+}
+
+.happy-hour-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    border-radius: 8px;
+}
+
 .happy-hour-section {
     background: var(--charcoal);
     color: var(--bronze);
     max-width: 700px;
-    margin: 80px auto;
+    margin: 0;
     padding: 45px;
+    flex: 0 0 55%;
+    width: 600px;
 }
 
 .happy-hour-header {
@@ -380,8 +403,30 @@ body {
     .happy-category h3 {
         font-size: 26px;
     }
+
 }
 
+@media (max-width: 900px) {
+        .happy-hour-image {
+            display: none;
+}
+}
+
+@media (max-width: 600px) {
+    .happy-hour-wrapper {
+        margin: 50px auto;
+        padding: 0 18px;
+    }
+
+    .happy-hour-section {
+        padding: 30px 0;
+    }
+
+    .happy-hour-header h2 {
+        font-size: 42px;
+    }
+
+}
 
 .photo-slider {
     width: 100%;
@@ -394,6 +439,8 @@ body {
     display: flex;
     width: max-content;
     animation: slideGallery 35s linear infinite;
+    overflow-x: auto;
+    scroll-behavior: smooth;
 }
 
 .slider-track img {
@@ -619,10 +666,10 @@ body {
 }
 
 .reservation-section {
-    background:
-        linear-gradient(rgba(0, 0, 0, 0.45),
+    background: linear-gradient(rgba(0, 0, 0, 0.15),
             rgba(0, 0, 0, 0.75)),
-        url("../images/olives.jpg");
+
+        url("../images/olives-back.jpg");
 
     background-size: cover;
     background-position: center;
@@ -1053,7 +1100,7 @@ body {
     }
 
     .story-gallery img {
-        height: 220px;
+        height: 450px;
     }
 
     .top-left {
